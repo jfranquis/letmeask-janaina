@@ -2,14 +2,17 @@ import firebase from 'firebase/app'
 import 'firebase/auth';
 import 'firebase/database';
 
+
+//variaveis de ambiente
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDEh6CHguuOIyQYvmW_1G84XLNtVv4TyjE",
-    authDomain: "letmeask-janaina.firebaseapp.com",
-    databaseURL: "https://letmeask-janaina-default-rtdb.firebaseio.com",
-    projectId: "letmeask-janaina",
-    storageBucket: "letmeask-janaina.appspot.com",
-    messagingSenderId: "715317578487",
-    appId: "1:715317578487:web:1fdfe99f5653425d4fa1f2"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 
 
